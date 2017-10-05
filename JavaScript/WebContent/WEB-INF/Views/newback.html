@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div data-ng-app="" data-ng-init="col='pink';quentity=1;cost=5">
+<input style="background-color:{{col}}" ng-model="col" value="{{col}}">
+<input type="number" ng-model="quentity">
+<input type="number" ng-model="cost">
+Total:{{quentity*cost}}
+
+</div>
+
+</body>
+</html>

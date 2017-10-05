@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+function comment()
+{
+var data="Name:<input type='text' name='name'><br> comment:<br> <textarea row='5'cols='80'></textarea> <br> <input type='submit' value='Post Comment'>";
+document.getElementById("loc").innerHTML=data;
+
+	}
+</script>
+<form action="">
+<input type="button" value="comment" onclick="comment()">
+<div id="loc"></div>
+</form>
+</body>
+</html>
