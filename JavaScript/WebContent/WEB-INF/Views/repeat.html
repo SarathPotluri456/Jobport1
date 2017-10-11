@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script> 
+</head>
+<body>
+<div ng-app="" ng-init="countries=[{local:'india',short:'ind'},{local:'africa',short:'afr'},{local:'america',short:'ame'}]">
+<ol>
+<li ng-repeat="con in countries">
+{{'Country:'+con.local+' '+'short:'+con.short}}</li>
+</ol>
+
+
+
+
+</div>
+</body>
+</html>

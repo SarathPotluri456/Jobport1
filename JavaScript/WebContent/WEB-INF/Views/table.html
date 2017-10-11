@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div ng-app="app" ng-controller='ctrl'>
+<table>
+<tr><th ng-click="orderby('name')">Name</th>
+<th ng-click="orderby('hobby')">Hobbit</th></tr>
+<tr ng-repeat="x in names | orderBy:myorder">
+<td>{{x.name}}</td>
+<td>{{x.hobby}}
+</tr>
+</table>
+</div>
+<script type="text/javascript">
+angular.module('app',[]).controller('ctrl',function($scope){
+	$scope.names=[{name:'sarath',hobby:'cricket'},{name:'bharath',hobby:'chess'},{name:'srinu',hobby:'holi'}];
+	$scope.orderby=function(x)
+	{
+		$scope.myorder=x;
+	}
+})
+</script>
+
+</body>
+</html>

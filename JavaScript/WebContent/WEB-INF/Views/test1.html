@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div ng-app="app" ng-controller="ctrl">
+<input type="text" ng-model="test">
+<ol>
+<li ng-repeat="x in names | filter:test">
+{{x}}
+</li>
+</ol>
+
+</div>
+<script type="text/javascript">
+angular.module('app',[]).controller('ctrl',function($scope){
+	$scope.names=['sarath','hai','bye','see','you'];
+});
+</script>
+</body>
+</html>
